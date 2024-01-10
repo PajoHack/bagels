@@ -1,39 +1,35 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Bagels - A Deductive Logic Game
 
-Welcome,
+## Description
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+"Bagels" is a deductive logic game where the player must guess a secret number based on clues provided after each guess. This game, created by Al Sweigart, is a great way to exercise your logical thinking skills.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+## How to Play
 
-## Codeanywhere Reminders
+The game generates a secret number with a certain number of digits (default is 3), and the player has a limited number of guesses (default is 10). After each guess, the game provides clues:
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+- Pico: One digit is correct but in the wrong position.
+- Fermi: One digit is correct and in the right position.
+- Bagels: No digit is correct.
 
-`python3 -m http.server`
+## Installation
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+No installation required. The game can be played by running the Python script.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+## Requirements
 
-`http_server`
+- Python 3.x
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Usage
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+Run the script in a Python environment:
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+`python bagels.py`
 
-To log into the Heroku toolbelt CLI:
+## Example
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+If the secret number is 248 and your guess is 843, the clues would be "Fermi Pico".
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Credits
 
----
-
-Happy coding!
+This game is developed by Al Sweigart. You can find more about his work at No Starch Press - The Big Book of Small Python Projects and Invent Your Own Computer Games with Python.
